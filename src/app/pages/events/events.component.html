@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Container 1: Categorias -->
+    <div class="col-md-3">
+      <div class="bg-light p-3">
+        <h4>Categorias</h4>
+        <ul class="list-unstyled">
+          <li><a href="#">Categoria 1</a></li>
+          <li><a href="#">Categoria 2</a></li>
+          <li><a href="#">Categoria 3</a></li>
+          <!-- Adicione mais categorias conforme necessário -->
+        </ul>
+      </div>
+    </div>
+    <!-- Container 2: Museus -->
+    <div class="col-md-9">
+      <div class="row">
+        <!-- Museu 1 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: rgb(187, 248, 187);">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-eventos/braga.png" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/events/event1">
+                  <h5 class="museus">Festas São João</h5>
+                </a>
+                <p class="card-text" style="margin-left: 5px;">As festas de São João têm raízes
+                  antigas, ligadas a celebrações pagãs do solstício de verão, que foram
+                  posteriormente cristianizadas. São João Batista é o santo homenageado, e a
+                  data de 24 de junho marca o seu nascimento. Estas celebrações têm sido parte
+                  da cultura portuguesa por séculos, simbolizando uma mistura de rituais
+                  religiosos e tradições populares.
+                </p>
+                <p style="margin-left: 5px;">
+                  <br><i>Braga</i>
+                </p>
+                <fa-icon [icon]="faTicket" style="margin-left: 3px;"></fa-icon> <i>Festivais e Tradição</i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Museu 2 -->
+        <div class="col-md-12 mb-4">
+          <div class="card">
+            <div class="card-body d-flex align-items-center">
+              <img src="https://via.placeholder.com/300" alt="Museu 2" class="museum-img mr-3">
+              <div>
+                <h5 class="card-title">Museu 2</h5>
+                <p class="card-text">Descrição do Museu 2. Lorem ipsum dolor sit amet,
+                  consectetur
+                  adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adicione mais museus conforme necessário -->
+
+      </div>
+    </div>
+
+  </div>
+</div>
