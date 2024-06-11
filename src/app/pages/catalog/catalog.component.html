@@ -1,63 +1,856 @@
 <div class="container-fluid">
   <div class="row">
     <!-- Container 1: Categorias -->
-    <div class="col-md-3">
-      <div class="bg-light p-3">
-        <h4>Categorias</h4>
-        <ul class="list-unstyled">
-          <li><a href="#">Categoria 1</a></li>
-          <li><a href="#">Categoria 2</a></li>
-          <li><a href="#">Categoria 3</a></li>
-          <!-- Adicione mais categorias conforme necessário -->
-        </ul>
-      </div>
+    <div class="col-md-3 m-3">
+          <div>
+            <br><h4 class="museus" style="margin-top: -5px;">Categorias por Distrito</h4>
+            <select id="distritos" class="form-control">
+              <option value="todos">Todos</option>
+              <option value="Viana do Castelo">Viana do Castelo</option>
+              <option value="Braga">Braga</option>
+              <option value="Vila Real">Vila Real</option>
+              <option value="Bragança">Bragança</option>
+              <option value="Porto">Porto</option>
+              <option value="Aveiro">Aveiro</option>
+              <option value="Viseu">Viseu</option>
+              <option value="Guarda">Guarda</option>
+              <option value="Coimbra">Coimbra</option>
+              <option value="Castelo Branco">Castelo Branco</option>
+              <option value="Leiria">Leiria</option>
+              <option value="Santarém">Santarém</option>
+              <option value="Portalegre">Portalegre</option>
+              <option value="Lisboa">Lisboa</option>
+              <option value="Évora">Évora</option>
+              <option value="Setúbal">Setúbal</option>
+              <option value="Beja">Beja</option>
+              <option value="Faro">Faro</option>
+            </select>
+          </div>
     </div>
+  </div>
     <!-- Container 2: Museus -->
-    <div class="col-md-9">
-      <div class="row">
-        <!-- Museu 1 -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md align-items-center">
+          <!-- Museu 1 -->
+          <div class="col-md-12 mb-4">
+            <div class="card" style="background-color: lightsteelblue;">
+              <div class="card-body d-flex align-items-center">
+                <img src="assets/catalogo-museus/gileanes.jpg" alt="Museu 1" class="museum-img mr-3">
+                <div style="margin-top: -50px;">
+                  <a routerLink="/catalog/museu1"><h5 class="museus">Navio Gil Eanes</h5></a>
+                  <p class="card-text" style="margin-left: 5px;">Desde que o Navio Gil Eannes foi
+                    colocado em exposição na antiga doca comercial de Viana do Castelo, a Fundação
+                    Gil Eannes tem tido como objectivo transformar o Gil Eannes num espaço
+                    museológico, contribuindo deste modo para o desenvolvimento cultural, turistico
+                    e científico especialmente em áreas relacionadas com o mar. Assim, ao longo
+                    destes anos várias obras de reabilitação e restauro têm sido feitas,
+                    proporcionando aos visitantes o contato com os diversos espaços e adquirindo um
+                    pouco da história que têm para contar.
+                  </p>
+                  <p style="margin-left: 5px;">
+                    <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.6 (6943)
+                  </p>
+                  <p style="margin-left: 5px;">
+                    <fa-icon [icon]="faLocation"></fa-icon><i> Viana do Castelo</i>
+                  </p><br>
+                  <button class="botaoaudio" (click)="audio('audio-element-1')">
+                    <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                  </button>
+                  <audio id="audio-element-1" src="assets/audios/catalogo-audio/GilEannes.mp3"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Museu 2 -->
+          <div class="col-md-12 mb-4">
+            <div class="card" style="background-color: lightsteelblue;">
+              <div class="card-body d-flex align-items-center">
+                <img src="assets/catalogo-museus/saotibaes.jpg" alt="Museu 1" class="museum-img mr-3">
+                <div style="margin-top: -50px;">
+                  <a routerLink="/catalog/museu2"><h5 class="museus">Mosteiro de São Martinho de Tibães</h5></a>
+                  <p class="card-text" style="margin-left: 5px;">
+                    São Martinho de Tibães é um mosteiro localizado na freguesia de Mire de Tibães,
+                    no concelho de Braga, no norte de Portugal. Fundado no século VI, tornou-se um
+                    importante centro religioso e cultural durante a Idade Média. A sua importância
+                    aumentou quando foi escolhido como casa-mãe da Congregação Beneditina Portuguesa
+                    no século XVI.
+                  </p>
+                  <p style="margin-left: 5px;">
+                    <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.7 (2419)
+                  </p>
+                  <p style="margin-left: 5px;">
+                    <fa-icon [icon]="faLocation"></fa-icon><i> Braga</i>
+                  </p><br>
+                  <button class="botaoaudio" (click)="audio('audio-element-2')">
+                    <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                  </button>
+                  <audio id="audio-element-2" src="assets/audios/catalogo-audio/SaoTibaes.mp3"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 3 -->
         <div class="col-md-12 mb-4">
           <div class="card" style="background-color: lightsteelblue;">
             <div class="card-body d-flex align-items-center">
-              <img src="assets/catalogo-museus/gileanes.jpg" alt="Museu 1" class="museum-img mr-3">
+              <img src="assets/catalogo-museus/museu-douro.jpg" alt="Museu 1" class="museum-img mr-3">
               <div style="margin-top: -50px;">
-                <a href="/museus-pages/Gileanes/Catálogo-GilEanes.html"><h5 class="museus">Navio Gil Eanes</h5></a>
-                <p class="card-text" style="margin-left: 5px;">Desde que o Navio Gil Eannes foi
-                  colocado em exposição na antiga doca comercial de Viana do Castelo, a Fundação
-                  Gil Eannes tem tido como objectivo transformar o Gil Eannes num espaço
-                  museológico, contribuindo deste modo para o desenvolvimento cultural, turistico
-                  e científico especialmente em áreas relacionadas com o mar. Assim, ao longo
-                  destes anos várias obras de reabilitação e restauro têm sido feitas,
-                  proporcionando aos visitantes o contato com os diversos espaços e adquirindo um
-                  pouco da história que têm para contar.
+                <a routerLink="/catalog/museu3"><h5 class="museus">Museu do Douro</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu do Douro também desempenha um papel crucial na promoção do turismo
+                  sustentável na região, incentivando os visitantes a explorar não apenas as
+                  exposições do museu, mas também as vinícolas locais, as paisagens deslumbrantes
+                  e as aldeias pitorescas do Vale do Douro. Além disso, como centro de pesquisa e
+                  educação, o museu colabora com instituições acadêmicas e vitivinícolas para
+                  promover o desenvolvimento contínuo da viticultura e enologia na região.
                 </p>
                 <p style="margin-left: 5px;">
-                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.6
-                  <br><i>Viana do Castelo</i>
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.5 (2952)
                 </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Vila Real</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-3')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-3" src="assets/audios/catalogo-audio/museu-douro.mp3"></audio>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Museu 2 -->
+        <!-- Museu 4 -->
         <div class="col-md-12 mb-4">
-          <div class="card">
+          <div class="card" style="background-color: lightsteelblue;">
             <div class="card-body d-flex align-items-center">
-              <img src="https://via.placeholder.com/300" alt="Museu 2" class="museum-img mr-3">
-              <div>
-                <h5 class="card-title">Museu 2</h5>
-                <p class="card-text">Descrição do Museu 2. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit.</p>
+              <img src="assets/catalogo-museus/museu-braganca.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu4"><h5 class="museus">Museu Militar de Bragança</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Militar de Bragança, localizado no castelo de Bragança, Portugal, é uma
+                  instituição cultural de grande importância que preserva e celebra a história
+                  militar da região e do país. Fundado para preservar e promover o patrimônio
+                  militar português, o museu oferece uma experiência imersiva que abrange desde
+                  armamentos e uniformes até à história das campanhas militares e das
+                  fortificações.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.4 (2008)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Bragança</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-4')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-4" src="assets/audios/catalogo-audio/audio-braganca.mp3"></audio>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Adicione mais museus conforme necessário -->
-
+        <!-- Museu 5 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-serraalves.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu5"><h5 class="museus">Museu de Arte Contemporânea de Serralves</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu de Arte Contemporânea de Serralves, localizado no Porto, Portugal, é uma
+                  das instituições culturais mais importantes do país, dedicado à promoção e
+                  exposição da arte contemporânea. Situado no Parque de Serralves, um vasto
+                  complexo que inclui também a Casa de Serralves e magníficos jardins, o museu
+                  oferece uma experiência imersiva que combina arte, arquitetura e natureza.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.4 (6063)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Porto</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-5')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-5" src="assets/audios/catalogo-audio/museu-porto.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 6 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-grao-vasco.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu6"><h5 class="museus">Museu Grão Vasco</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Grão Vasco está localizado na cidade de Viseu, em Portugal, e é um dos
+                  mais importantes museus de arte sacra do país. Fundado em 1916, o museu está
+                  instalado no antigo Paço Episcopal, um edifício histórico que remonta ao século
+                  XVI. Este museu homenageia o pintor renascentista Vasco Fernandes, conhecido
+                  como Grão Vasco, cujas obras são o destaque da coleção.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.5 (676)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Viseu</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-6')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-6" src="assets/audios/catalogo-audio/museu-viseu.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 7 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-vista-alegre.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu7"><h5 class="museus">Museu Vista Alegre</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Vista Alegre está localizado na cidade de Ílhavo, em Portugal, e é
+                  dedicado à história e à produção da renomada fábrica de porcelanas Vista Alegre.
+                  Fundado em 1964, o museu está instalado no complexo da fábrica, que foi
+                  estabelecida em 1824, sendo uma das mais antigas e prestigiadas fábricas de
+                  porcelana da Europa.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.7 (1341)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Aveiro</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-7')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-7" src="assets/audios/catalogo-audio/museu-aveiro.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 8 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-fundacao-coa.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu8"><h5 class="museus">Museu Fundação do Côa</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu da Fundação Côa Parque, localizado em Vila Nova de Foz Côa, Portugal, é
+                  um centro dedicado à preservação, estudo e divulgação da arte rupestre do Vale
+                  do Côa. Inaugurado em 2010, o museu está situado numa paisagem deslumbrante,
+                  próxima das margens do rio Côa, e é uma parte integral do Parque Arqueológico do
+                  Vale do Côa, um sítio classificado como Património Mundial pela UNESCO.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.6 (3726)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Guarda</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-8')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-8" src="assets/audios/catalogo-audio/museu-guarda.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 9 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-coimbra.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu9"><h5 class="museus">Museu da Universidade de Coimbra</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu da Universidade de Coimbra, localizado na cidade de Coimbra, Portugal, é
+                  uma instituição que preserva e exibe o rico património histórico, científico e
+                  cultural da Universidade de Coimbra, uma das mais antigas universidades da
+                  Europa, fundada em 1290. O museu está situado no Pátio das Escolas, no coração
+                  da universidade, e oferece uma viagem fascinante pela história da educação,
+                  ciência e arte.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.3 (1022)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Coimbra</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-9')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-9" src="assets/audios/catalogo-audio/museu-coimbra.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 10 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-leiria.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu10"><h5 class="museus">Museu Grutas da Moeda</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu das Grutas da Moeda, localizado em São Mamede, perto de Fátima,
+                  Portugal, é uma instituição que complementa a visita às impressionantes Grutas
+                  da Moeda. Inaugurado para enriquecer a experiência dos visitantes, o museu
+                  proporciona uma compreensão aprofundada da geologia, espeleologia e história
+                  natural da região.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.6 (5901)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Leiria</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-10')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-10" src="assets/audios/catalogo-audio/museu-leiria.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 11 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-santarem.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu11"><h5 class="museus">Museu Nacional Ferroviário</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Nacional Ferroviário, localizado no Entroncamento, perto de Santarém,
+                  Portugal, é uma instituição dedicada à preservação, estudo e divulgação da
+                  história e do património ferroviário português. Inaugurado em 2015, o museu
+                  ocupa uma área vasta que inclui várias naves industriais e oficinas ferroviárias
+                  históricas, proporcionando uma imersão completa no universo ferroviário.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.7 (2533)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Santarém</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-11')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-11" src="assets/audios/catalogo-audio/museu-santarem.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 12 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-portalegre.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu12"><h5 class="museus">Museu Ciência do Café</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Centro de Ciência do Café é um espaço moderno que alia conhecimento, divulgação
+                  técnico-científica, informação e atividades interativas. Pretende divulgar a cultura
+                  do café, promover espaços dinâmicos do conhecimento e do lazer, onde se estimule a
+                  curiosidade e o desejo de aprender.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.8 (2317)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Portalegre</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-12')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-12" src="assets/audios/catalogo-audio/museu-portalegre.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 13 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-lisboa.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu13"><h5 class="museus">Museu Calouste Gulbenkian</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Calouste Gulbenkian, localizado em Lisboa, Portugal, é uma das mais
+                  prestigiadas instituições culturais do país. Fundado em 1969, o museu é dedicado à
+                  coleção de arte reunida pelo magnata armênio Calouste Gulbenkian ao longo de sua
+                  vida. A coleção é ampla e abrange várias épocas e culturas, incluindo arte egípcia,
+                  greco-romana, islâmica, asiática e europeia, bem como esculturas, arte decorativa e
+                  peças de mobiliário.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.7 (15 464)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Lisboa</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-13')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-13" src="assets/audios/catalogo-audio/museu-lisboa.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 14 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-setubal.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu14"><h5 class="museus">Museu Fragata D. Fernando II e Glória</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Fragata D. Fernando II e Glória, localizado em Almada, Portugal, é uma
+                  instituição única dedicada à preservação e à história da fragata homónima, que foi
+                  restaurada e transformada em museu. Inaugurado em 1993, o museu oferece aos
+                  visitantes a oportunidade de explorar uma fragata histórica do século XIX e aprender
+                  sobre a vida a bordo e as viagens marítimas da época.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.6 (2204)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Setúbal</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-14')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-14" src="assets/audios/catalogo-audio/museu-setubal.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 15 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-faro.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu15"><h5 class="museus">Museu Regional de Faro</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Regional de Faro, localizado na cidade de Faro, Portugal, é uma instituição
+                  cultural dedicada à preservação e exposição do patrimônio histórico, arqueológico,
+                  artístico e etnográfico da região do Algarve. Fundado em 1894, o museu está
+                  instalado num edifício histórico no centro da cidade.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.4 (375)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Faro</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-15')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-15" src="assets/audios/catalogo-audio/museu-faro.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 16 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-evora.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu16"><h5 class="museus">Museu Nacional Frei Manuel do Cenáculo</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Nacional Frei Manuel do Cenáculo, localizado em Évora, Portugal, é uma
+                  instituição cultural dedicada à preservação e exposição de um vasto acervo de arte
+                  sacra, arqueologia, pintura, escultura e artes decorativas. Inaugurado em 1915, o
+                  museu está instalado no antigo Palácio dos Bispos de Évora, um edifício histórico
+                  que remonta ao século XVI.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.5 (227)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Évora</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-16')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-16" src="assets/audios/catalogo-audio/museu-evora.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 17 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-castelobranco.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu17"><h5 class="museus">Museu dos Descobrimentos</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu dos Descobrimentos, localizado na cidade de Belmonte, perto de Castelo
+                  Branco, em Portugal, é dedicado à celebração e exploração dos feitos marítimos e das
+                  descobertas portuguesas. Inaugurado em 2009, o museu está situado na antiga Casa da
+                  Torre, uma construção histórica que foi adaptada para acolher esta instituição
+                  cultural.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.5 (810)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Castelo Branco</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-17')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-17" src="assets/audios/catalogo-audio/museu-castelobranco.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 18 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-beja.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu18"><h5 class="museus">Museu Regional de Beja</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Regional de Beja, localizado na cidade de Beja, Portugal, é uma instituição
+                  cultural dedicada à preservação e exposição do patrimônio histórico, arqueológico,
+                  artístico e etnográfico da região de Beja. Fundado em 1927, o museu está instalado
+                  no antigo Convento de Nossa Senhora da Conceição, um edifício histórico que remonta
+                  ao século XV.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.3 (565)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Beja</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-18')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-18" src="assets/audios/catalogo-audio/museu-beja.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 19 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-santarem2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu19"><h5 class="museus">Museu de Cera</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  Um museu de cera é uma instituição cultural que exibe figuras de cera representando
+                  pessoas famosas, personagens históricos, celebridades, líderes políticos e outras
+                  personalidades importantes. Estas figuras são feitas de cera e são extremamente
+                  realistas, muitas vezes projetadas para parecerem o mais próximo possível das
+                  pessoas reais que estão a representar.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.6 (1788)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Santarém</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-19')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-19" src="assets/audios/catalogo-audio/museu-santarem2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 20 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-guarda2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu20"><h5 class="museus">Museu do Pão</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu do Pão, localizado na cidade da Guarda, Portugal, é uma instituição dedicada
+                  à preservação, promoção e celebração da cultura do pão, um elemento fundamental da
+                  dieta e da tradição portuguesa. Inaugurado em 2002, o museu oferece aos visitantes
+                  uma viagem fascinante pela história, produção e significado do pão ao longo dos
+                  tempos.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.5 (7482)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Guarda</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-20')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-20" src="assets/audios/catalogo-audio/museu-guarda2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 21 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-braganca2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu21"><h5 class="museus">Museu Ibérico da Máscara e do Traje</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Ibérico da Máscara e do Traje (MIMT), localizado na cidade de Bragança,
+                  Portugal, é uma instituição cultural única dedicada à preservação, estudo e
+                  divulgação das tradições ibéricas relacionadas com máscaras e trajes festivos.
+                  Inaugurado em 2007, o museu oferece aos visitantes uma oportunidade única de
+                  explorar as ricas tradições culturais e folclóricas da Península Ibérica.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.4 (352)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Bragança</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-21')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-21" src="assets/audios/catalogo-audio/museu-braganca2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 22 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-braga2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu22"><h5 class="museus">Museu Biscainhos</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu dos Biscainhos, localizado na cidade de Braga, Portugal, é uma instituição
+                  cultural que oferece aos visitantes uma oportunidade única de explorar a vida
+                  aristocrática portuguesa dos séculos XVII a XIX. Situado no Palácio dos Biscainhos,
+                  um magnífico edifício barroco do século XVII, o museu apresenta uma coleção
+                  diversificada de arte, mobiliário, tapeçarias e objetos decorativos que ilustram a
+                  vida quotidiana da elite portuguesa da época.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.4 (352)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Braga</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-22')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-22" src="assets/audios/catalogo-audio/museu-braga2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 23 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-viseu2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu23"><h5 class="museus">Museu do Quartzo</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu do Quartzo, localizado em Viseu, Portugal, é uma instituição dedicada à
+                  exposição e divulgação do quartzo, uma pedra preciosa muito apreciada pela sua
+                  beleza e propriedades físicas e químicas. Este museu oferece aos visitantes uma
+                  oportunidade única de aprender sobre a formação, características e aplicações do
+                  quartzo, assim como a sua importância na geologia e na indústria.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.4 (533)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Viseu</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-23')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-23" src="assets/audios/catalogo-audio/museu-viseu2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 24 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-portalegre2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu24"><h5 class="museus">Museu da Tapeçaria</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu da Tapeçaria de Portalegre Guy Fino é uma instituição cultural localizada em
+                  Portalegre, Portugal, dedicada à preservação, exposição e promoção da tapeçaria
+                  portuguesa, com ênfase especial nas produções da Fábrica de Tapetes de Portalegre,
+                  uma das mais prestigiadas do país.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.8 (334)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Portalegre</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-24')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-24" src="assets/audios/catalogo-audio/museu-portalegre2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 25 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-evora2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu25"><h5 class="museus">Museu do Relógio</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu do Relógio de Évora é uma instituição cultural localizada na cidade de
+                  Évora, Portugal, dedicada à preservação, exposição e estudo da história e evolução
+                  dos relógios ao longo do tempo. Este museu oferece aos visitantes uma oportunidade
+                  única de explorar uma coleção diversificada de relógios antigos, desde os mais
+                  simples até os mais elaborados, e aprender sobre a sua importância na medição do
+                  tempo e na vida quotidiana das pessoas.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.4 (247)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Évora</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-25')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-25" src="assets/audios/catalogo-audio/museu-evora2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 26 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-lisboa2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu26"><h5 class="museus">Museu do Azulejo</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Nacional do Azulejo, localizado em Lisboa, Portugal, é uma instituição
+                  cultural dedicada à preservação, exposição e estudo do azulejo, uma forma de arte
+                  cerâmica que desempenha um papel significativo na cultura portuguesa e na
+                  arquitetura do país. Este museu oferece aos visitantes uma oportunidade única de
+                  explorar a história, a técnica e a diversidade desta forma de expressão artística.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.6 (13 556)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Lisboa</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-26')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-26" src="assets/audios/catalogo-audio/museu-lisboa2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 27 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-coimbra2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu27"><h5 class="museus">Museu Nacional Machado de Castro</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Nacional Machado de Castro, localizado na cidade de Coimbra, Portugal, é um
+                  dos mais importantes museus de arte e arqueologia do país. Nomeado em honra do
+                  proeminente escultor Joaquim Machado de Castro, este museu está alojado num edifício
+                  histórico que remonta ao século XVI e apresenta uma vasta coleção de artefactos que
+                  abrangem desde a pré-história até ao período moderno.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.7 (1897)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Coimbra</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-27')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-27" src="assets/audios/catalogo-audio/museu-coimbra2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 28 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-castelobranco2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu28"><h5 class="museus">Museu do Queijo</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu do Queijo de Castelo Branco é uma instituição dedicada à preservação,
+                  divulgação e celebração da tradição queijeira da região de Castelo Branco, Portugal.
+                  Este museu oferece aos visitantes uma oportunidade única de explorar a história, o
+                  processo de fabrico, as características e a importância cultural deste produto tão
+                  emblemático.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.3 (805)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Castelo Branco</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-28')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-28" src="assets/audios/catalogo-audio/museu-castelobranco2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Museu 29 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-museus/museu-aveiro2.jpg" alt="Museu 1" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/catalog/museu29"><h5 class="museus">Museu Marítimo</h5></a>
+                <p class="card-text" style="margin-left: 5px;">
+                  O Museu Marítimo de Ílhavo, situado em Ílhavo, Portugal, é uma instituição cultural
+                  dedicada à preservação, exposição e estudo da história marítima da região, com
+                  ênfase especial na pesca do bacalhau e na indústria da pesca tradicional. Este museu
+                  oferece aos visitantes uma oportunidade única de explorar a herança marítima de
+                  Ílhavo e a sua ligação ao mar.
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faStarHalf" style="color: #de9f00;"></fa-icon> 4.6 (2905)
+                </p>
+                <p style="margin-left: 5px;">
+                  <fa-icon [icon]="faLocation"></fa-icon><i> Aveiro</i>
+                </p><br>
+                <button class="botaoaudio" (click)="audio('audio-element-29')">
+                  <img src="assets/icons/audio.png" class="audioimagem" style="margin-top: -40px;">
+                </button>
+                <audio id="audio-element-29" src="assets/audios/catalogo-audio/museu-aveiro2.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-  </div>
 </div>
