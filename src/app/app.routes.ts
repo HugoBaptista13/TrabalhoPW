@@ -5,6 +5,11 @@ import { EventsComponent } from "./pages/events/events.component";
 import { TicketsComponent } from "./pages/tickets/tickets.component";
 
 import { Event1Component } from "./pages/events/event1/event1.component";
+import { Event2Component } from "./pages/events/event2/event2.component";
+import { Event3Component } from "./pages/events/event3/event3.component";
+import { Event4Component } from "./pages/events/event4/event4.component";
+import { Event5Component } from "./pages/events/event5/event5.component";
+import { Event6Component } from "./pages/events/event6/event6.component";
 
 import { Museu1Component } from "./pages/catalog/museus/museu1/museu1.component";
 import { Museu2Component } from "./pages/catalog/museus/museu2/museu2.component";
@@ -43,6 +48,11 @@ export const routes: Routes = [
   { path: 'tickets', component: TicketsComponent},
 
   { path: 'events/event1', component: Event1Component},
+  { path: 'events/event2', component: Event2Component},
+  { path: 'events/event3', component: Event3Component},
+  { path: 'events/event4', component: Event4Component},
+  { path: 'events/event5', component: Event5Component},
+  { path: 'events/event6', component: Event6Component},
 
   { path: 'catalog/museu1', component: Museu1Component},
   { path: 'catalog/museu2', component: Museu2Component},

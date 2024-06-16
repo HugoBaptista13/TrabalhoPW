@@ -1,25 +1,13 @@
 <div class="container-fluid">
   <div class="row">
-    <!-- Container 1: Categorias -->
-    <div class="col-md-3">
-      <div class="bg-light p-3">
-        <h4>Categorias</h4>
-        <ul class="list-unstyled">
-          <li><a href="#">Categoria 1</a></li>
-          <li><a href="#">Categoria 2</a></li>
-          <li><a href="#">Categoria 3</a></li>
-          <!-- Adicione mais categorias conforme necessário -->
-        </ul>
-      </div>
-    </div>
-    <!-- Container 2: Museus -->
-    <div class="col-md-9">
+    <!-- Container Eventos -->
+    <div class="col-md-12">
       <div class="row">
-        <!-- Museu 1 -->
+        <!-- Evento 1 -->
         <div class="col-md-12 mb-4">
           <div class="card" style="background-color: rgb(187, 248, 187);">
             <div class="card-body d-flex align-items-center">
-              <img src="assets/catalogo-eventos/braga.png" alt="Museu 1" class="museum-img mr-3">
+              <img src="assets/catalogo-eventos/braga.png" alt="Evento 1" class="museum-img mr-3">
               <div style="margin-top: -50px;">
                 <a routerLink="/events/event1">
                   <h5 class="museus">Festas São João</h5>
@@ -34,28 +22,153 @@
                 <p style="margin-left: 5px;">
                   <br><i>Braga</i>
                 </p>
-                <fa-icon [icon]="faTicket" style="margin-left: 3px;"></fa-icon> <i>Festivais e Tradição</i>
+                <fa-icon [icon]="faTicket" style="margin-left: 3px;"></fa-icon> <i> Festivais e Tradição</i>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Museu 2 -->
+        <!-- Evento 2 -->
         <div class="col-md-12 mb-4">
-          <div class="card">
+          <div class="card" style="background-color: rgb(187, 248, 187);">
             <div class="card-body d-flex align-items-center">
-              <img src="https://via.placeholder.com/300" alt="Museu 2" class="museum-img mr-3">
-              <div>
-                <h5 class="card-title">Museu 2</h5>
-                <p class="card-text">Descrição do Museu 2. Lorem ipsum dolor sit amet,
-                  consectetur
-                  adipiscing elit.</p>
+              <img src="assets/catalogo-eventos/lisboa.jpg" alt="Evento 2" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/events/event2">
+                  <h5 class="museus">Átomo e as Partículas Elementares</h5>
+                </a>
+                <p class="card-text" style="margin-left: 5px;">Diz uma máxima hermética: “Assim
+                  é em cima como em baixo”. Poderá haver analogias entre o átomo e o universo?
+                  Poderá o macrocosmos, ser similar ao microcosmos?
+                  Se estudamos o átomo com uma mente aberta a extrapolar, a fazer analogias,
+                  às vezes, entre coisas aparentemente muito diferentes, podemos concluir que
+                  nele se podem encontrar elementos similares aos que compõem o sistema solar.
+                  E poderíamos encontrar também aspetos análogos entre um átomo e um ser
+                  humano? Existe uma matéria primordial, origem de tudo? Essa matéria
+                  primordial é física? Conhecia-se a energia nuclear antes de que a ciência
+                  atual a descobrisse?
+                </p>
+                <p style="margin-left: 5px;">
+                  <br><i>Lisboa</i>
+                </p>
+                <fa-icon [icon]="faTicket" style="margin-left: 3px;"></fa-icon> <i> Conferência</i>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Adicione mais museus conforme necessário -->
+        <!-- Evento 3 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: rgb(187, 248, 187);">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-eventos/guarda.png" alt="Evento 3" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/events/event3">
+                  <h5 class="museus">Marchas da Liberdade</h5>
+                </a>
+                <p class="card-text" style="margin-left: 5px;">As Marchas da Liberdade,
+                  realizadas em Santos da Guarda, são um evento cultural e tradicional que
+                  celebra a liberdade e a identidade local através de desfiles e apresentações
+                  artísticas. Este evento é uma manifestação vibrante da cultura popular,
+                  trazendo a comunidade para as ruas em uma celebração de música, dança e
+                  cores.Os desfiles temáticos são uma das características mais marcantes das
+                  Marchas da Liberdade. Diferentes grupos competem entre si, apresentando
+                  coreografias, músicas e trajes elaborados. Cada grupo escolhe um tema
+                  específico que é representado através de sua performance, refletindo
+                  aspectos culturais, históricos ou sociais da região.
+                </p>
+                <p style="margin-left: 5px;">
+                  <br><i>Lisboa</i>
+                </p>
+                <fa-icon [icon]="faTicket" style="margin-left: 3px;"></fa-icon> <i> Festivais e Tradição</i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evento 4 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: rgb(187, 248, 187);">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-eventos/jornadas.jpg" alt="Evento 4" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/events/event4">
+                  <h5 class="museus">Jornadas Europeias da Arqueologia</h5>
+                </a>
+                <p class="card-text" style="margin-left: 5px;">As Jornadas Europeias da
+                  Arqueologia são um evento anual que celebra a rica herança arqueológica
+                  da Europa. Este evento, promovido por diversas instituições e entidades
+                  culturais, visa aumentar a conscientização sobre a importância da
+                  arqueologia na compreensão da história e das civilizações antigas.
+                  Durante as Jornadas Europeias da Arqueologia, uma série de atividades
+                  são organizadas em diferentes países europeus.
+                </p>
+                <p style="margin-left: 5px;">
+                  <br><i>Leiria</i>
+                </p>
+                <fa-icon [icon]="faTicket" style="margin-left: 3px;"></fa-icon> <i> Passeios e Visitas</i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evento 5 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: rgb(187, 248, 187);">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-eventos/faro.jpg" alt="Evento 5" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/events/event5">
+                  <h5 class="museus">O Túmulo Megalítico de Santa Rita</h5>
+                </a>
+                <p class="card-text" style="margin-left: 5px;">O Túmulo Megalítico de Santa
+                  Rita é um importante sítio arqueológico localizado em Portugal. Este
+                  monumento pré-histórico pertence ao período neolítico e é representativo
+                  das práticas funerárias e das construções megalíticas daquela época.
+                  O túmulo é caracterizado por sua estrutura de grande escala, composta
+                  por enormes pedras erguidas de forma a criar uma câmara funerária. Estas
+                  câmaras eram cobertas por grandes lajes de pedra e muitas vezes estavam
+                  originalmente recobertas por um monte de terra ou pedras menores,
+                  formando um túmulo ou uma colina artificial.
+                </p>
+                <p style="margin-left: 5px;">
+                  <br><i>Faro</i>
+                </p>
+                <fa-icon [icon]="faTicket" style="margin-left: 3px;"></fa-icon> <i> Conferência</i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evento 6 -->
+        <div class="col-md-12 mb-4">
+          <div class="card" style="background-color: rgb(187, 248, 187);">
+            <div class="card-body d-flex align-items-center">
+              <img src="assets/catalogo-eventos/setubal.jpg" alt="Evento 6" class="museum-img mr-3">
+              <div style="margin-top: -50px;">
+                <a routerLink="/events/event6">
+                  <h5 class="museus">Templo de Sílica 3.0</h5>
+                </a>
+                <p class="card-text" style="margin-left: 5px;">O Templo de Sílica 3.0 é um conceito ou projeto inovador que mistura
+                  elementos de tecnologia avançada, arquitetura contemporânea e
+                  sustentabilidade. O nome "Sílica" remete ao dióxido de silício, um dos
+                  componentes principais do vidro e de muitos materiais utilizados em
+                  tecnologias modernas, enquanto "3.0" indica uma versão evoluída ou
+                  avançada de um conceito anterior.A arquitetura do Templo de Sílica 3.0
+                  incorpora elementos de design bioclimático, aproveitando as
+                  características naturais do local para melhorar a eficiência energética.
+                  Painéis solares feitos de vidro fotovoltaico cobrem a estrutura,
+                  convertendo a luz solar em eletricidade e tornando o templo
+                  energeticamente autossuficiente.
+                </p>
+                <p style="margin-left: 5px;">
+                  <br><i>Setúbal</i>
+                </p>
+                <fa-icon [icon]="faTicket" style="margin-left: 3px;"></fa-icon> <i> Teatro e Dança</i>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>

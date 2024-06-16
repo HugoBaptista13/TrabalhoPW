@@ -3,8 +3,8 @@
     <!-- Container 1: Categorias -->
     <div class="col-md-3 m-3">
           <div>
-            <br><h4 class="museus" style="margin-top: -5px;">Categorias por Distrito</h4>
-            <select id="distritos" class="form-control">
+            <br><h4 class="museus" style="margin-top: -5px;">Pesquisar por distritos</h4>
+            <select id="distritos" class="form-control" (change)="pesquisaDistrito()">
               <option value="todos">Todos</option>
               <option value="Viana do Castelo">Viana do Castelo</option>
               <option value="Braga">Braga</option>

@@ -34,7 +34,7 @@
 .museus
 {
   text-align: center;
-  font-family: Merriweather, sans-serif;
+  font-family: Merriweather, serif;
 }
 .audioimagem
 {
@@ -110,7 +110,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto 20px auto;
   width: 900px;
-  height: 1400px;
+  height: auto;
   border-radius: 10%;
   background-color: rgb(187, 248, 187);
 }
@@ -126,4 +126,15 @@
 {
   background-color: white;
   font-family: 'Roboto', sans-serif;
+}
+
+.carousel-item {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel-img {
+  width: auto;
+  display: block;
+  margin: 0 auto;
 }
